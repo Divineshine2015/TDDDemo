@@ -15,6 +15,7 @@ namespace TDDDemo
             return TMessage;
         }
         
+        //new method to removel vowels
         public string TextMessage(string input)
         {
 
