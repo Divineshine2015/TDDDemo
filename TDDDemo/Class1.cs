@@ -22,16 +22,12 @@ namespace TDDDemo
         }
         public string ConvertConsonants(string t)
         {
-            CString = (from c in t
-
-                               where c != 'A'
-                               where c != 'E'
-                               where c != 'I'
-                               where c != 'O'
-                               where c != 'U'
-                               select c).ToString();
+            t = AnyString.Split('-')[0];
             
-            return CString;
+            string startConsonants = t.ToUpper().Replace("A", "").Replace("E", "").Replace("I", "").Replace("O", "").Replace("U", "");
+            
+
+            return string.Format("{0}{1}-{2}{3}", startConsonants[0].ToString(), startConsonants[startConsonants.Length - 1].ToString());
         }
     }
 }
