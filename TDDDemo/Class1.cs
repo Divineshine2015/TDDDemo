@@ -14,18 +14,23 @@ namespace TDDDemo
             TMessage = "strint n stuff";
             return TMessage;
         }
-        public string TextMessage(string t)
+        
+        public string TextMessage(string input)
         {
-            TMessage = (from c in t
 
-                               where c != 'A'
-                               where c != 'E'
-                               where c != 'I'
-                               where c != 'O'
-                               where c != 'U'
-                               select c).ToString();
+            int index = 0;
+            char[] result = new char[input.Length];
+            for (int i = 0; i < input.Length; i++)
+            { 
+                
+                if (input[i] != 'a' && input[i] != 'e' && input[i] != 'i' && input[i] != 'o' && input[i] != 'u'&& input[i] != 'A' && input[i] != 'E' && input[i] != 'I' && input[i] != 'O' && input[i] != 'U')
+                {
+                    result[index++] = input[i];
+                }
+            }
+            return new string(result, 0, index);
+
             
-            return TMessage;
         }
     }
 }
