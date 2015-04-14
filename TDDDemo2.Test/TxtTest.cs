@@ -31,5 +31,14 @@ namespace TDDDemo2.Test
             Assert.Equal("bc", testc);
 
         }
+        [Fact]
+        public void Upperclass()
+        {
+            string pancake = "pancake";
+            string pancake2 = pancake.ToUpper();
+
+            Assert.Equal("PANCAKE", pancake2);
+    
+        }
     }
 }
