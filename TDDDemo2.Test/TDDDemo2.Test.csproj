@@ -6,14 +6,14 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{58F67C43-BE9B-471E-9F23-86CACEFF7693}</ProjectGuid>
+    <ProjectGuid>{2BD76C75-31E8-4773-BE94-E1A98D0B73F0}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>TDDDemo</RootNamespace>
-    <AssemblyName>TDDDemo</AssemblyName>
+    <RootNamespace>TDDDemo2.Test</RootNamespace>
+    <AssemblyName>TDDDemo2.Test</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
-    <NuGetPackageImportStamp>70a87b57</NuGetPackageImportStamp>
+    <NuGetPackageImportStamp>ac121953</NuGetPackageImportStamp>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
