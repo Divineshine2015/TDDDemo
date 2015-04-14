@@ -23,13 +23,15 @@ namespace TDDDemo2.Test
         [Fact]
         public void Consonants()
         {
+            whatever c1 = new whatever();
+               
 
-            var c1 = new whatever("abc");
+            var testc = c1.TextMessage("ABC");
 
-            var testc = c1.do();
-
-            Assert.Equal("bc", testc);
+            Assert.Equal("BC", testc);
 
         }
+
+       
     }
 }
