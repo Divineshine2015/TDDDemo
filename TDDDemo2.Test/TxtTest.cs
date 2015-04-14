@@ -24,11 +24,11 @@ namespace TDDDemo2.Test
         public void Consonants()
         {
 
-            var c1 = new whatever("abc");
+            whatever c1 = new whatever();
 
-            var testc = c1.do();
+            var testc = c1.TextMessage("ABC");
 
-            Assert.Equal("bc", testc);
+            Assert.Equal("BC", testc);
 
         }
         public void Upperclass()
