@@ -8,15 +8,21 @@ namespace TDDDemo
 {
     public class whatever
     {
-        public string TMessage { get; set; }
-        public string TextMessage()
+        public string AnyString { get; set; }
+        public string CString { get; set; }
+        public string whatever(string t)
         {
-            TMessage = "strint n stuff";
-            return TMessage;
+            this.CString = t;
+            return AnyString;
         }
-        public string TextMessage(string t)
+        public string copy()
         {
-            TMessage = (from c in t
+           AnyString = "strint n stuff";
+            return AnyString;
+        }
+        public string ConvertConsonants(string t)
+        {
+            CString = (from c in t
 
                                where c != 'A'
                                where c != 'E'
@@ -25,7 +31,7 @@ namespace TDDDemo
                                where c != 'U'
                                select c).ToString();
             
-            return TMessage;
+            return CString;
         }
     }
 }

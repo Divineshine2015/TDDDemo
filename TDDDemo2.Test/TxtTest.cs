@@ -23,12 +23,16 @@ namespace TDDDemo2.Test
         [Fact]
         public void Consonants()
         {
+            var p = new whatever();
+            p.AnyString = "some input";
+            var answer = p.ConvertConsonants("different input");
 
-            whatever c1 = new whatever();
+            var output = p.CString;
 
-            var testc = c1.TextMessage("ABC");
 
-            Assert.Equal("BC", testc);
+            Assert.Equal("smnpt", answer);
+            Assert.Equal("smnpt", output);
+
 
         }
         public void Upperclass()
