@@ -28,14 +28,7 @@ namespace TDDDemo2.Test
             Assert.Equal("dffrnt npt", answer);                       
 
         }       
-        public void Upperclass()
-        {
-            string pancake = "pancake";
-            string pancake2 = pancake.ToUpper();
-
-            Assert.Equal("PANCAKE", pancake2);
-
-        }
+       
         [Fact]
         public void Alphabetized()
         {
