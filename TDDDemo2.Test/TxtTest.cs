@@ -44,5 +44,13 @@ namespace TDDDemo2.Test
             var alphaanswer = c.Alphabetize("dffrnt npt");
             Assert.Equal(" dffnnprtt", alphaanswer);
         }
+        [Fact]
+        public void NoRepeats()
+        {
+            var d = new whatever();
+            var repanswer = d.Alphabetize(" dffnnprtt");
+            Assert.Equal(" dfnprt", repanswer);
+
+        }
     }
 }
