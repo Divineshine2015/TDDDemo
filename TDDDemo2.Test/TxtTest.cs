@@ -25,7 +25,7 @@ namespace TDDDemo2.Test
         {
             var p = new whatever();
             var answer = p.TextMessage("different input");
-            Assert.Equal("dffrntnpt", answer);                       
+            Assert.Equal("dffrnt npt", answer);                       
 
         }
         public void Upperclass()
