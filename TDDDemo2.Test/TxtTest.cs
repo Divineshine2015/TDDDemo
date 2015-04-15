@@ -45,11 +45,20 @@ namespace TDDDemo2.Test
             Assert.Equal(" dffnnprtt", alphaanswer);
         }
         [Fact]
-        public void NoRepeats()
+        public void NoRepeatsTest()
         {
             var d = new whatever();
-            var repanswer = d.Alphabetize(" dffnnprtt");
-            Assert.Equal(" dfnprt", repanswer);
+            var repanswer = d.NoRepeats("dffnnprtt");
+            Assert.Equal("dfnprt", repanswer);
+
+        }
+        [Fact]
+        public void AllLowercase()
+        {
+            var l = new whatever();
+            var lowercaseAnswer = l.LowerCases("DFNPRT");
+
+            Assert.Equal("dfnprt", lowercaseAnswer);
 
         }
     }

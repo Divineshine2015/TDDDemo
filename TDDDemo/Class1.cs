@@ -46,9 +46,10 @@ namespace TDDDemo
             return new string (a);
         }
         // new method to remove any repeats in string
-        public string Repeats(string Alphabetize)
+        public string NoRepeats(string t)
         {
-            char[] a = Alphabetize.ToCharArray();
+
+            char[] a = t.ToCharArray();
             List<char> b = new List<char>();
             var pchar = '0';
             foreach (var cchar in a)
@@ -60,12 +61,21 @@ namespace TDDDemo
                     pchar = cchar;
                        
                 }
-
-                return new string(b.ToArray());
+                
+                
             }
+
+            return new string(b.ToArray());
         }
 
-            
+        public object LowerCases(string p)
+        {
+
+          var  lowcase = p.ToLower();
+
+          return lowcase;
+
         }
+    }
     
 }
